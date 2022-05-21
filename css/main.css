@@ -321,11 +321,21 @@ a {
   box-sizing: content-box;
 }
 
+.header {
+  padding: 15px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 40px 0 20px 0;
+  }
+}
+
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 10px;
+  padding: 0 10px;
 }
 
 .navigation {
@@ -446,7 +456,7 @@ select {
 
 .authentication__item:first-child .authentication__btn {
   border: 1px solid #4cb649;
-  padding: 11px 22px;
+  padding: 11px 22px 9px;
   color: #4cb649;
   background-color: #ffffff;
   transition: all 250ms ease;
@@ -462,7 +472,7 @@ select {
   color: #ffffff;
   background-color: #4cb649;
   border: 1px solid transparent;
-  padding: 11px 15px;
+  padding: 11px 15px 9px;
   transition: all 250ms ease;
 }
 

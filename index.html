@@ -17,23 +17,47 @@
 <body>
    <!-- *Navigation -->
    <header class="header">
-      <div class="container">
+      <div class="container header__container">
          <nav class="navigation">
-            <a href="./" class="logo">Company</a>
+            <button class="mobile-menu-btn" type="button">
+               <svg class="mobile-menu-btn__icon" width="24" height="16">
+                  <use href="./images/sprite.svg#icon-burger"></use>
+               </svg>
+            </button>
+            <a href="./" class="logo">Company Name</a>
             <ul class="site-nav">
-               <li class="site-nav__item">WHY US</li>
-               <li class="site-nav__item">VPN APPS</li>
-               <li class="site-nav__item">SUPPORT</li>
-               <li class="site-nav__item">RESOURSES</li>
-            </ul>
-            <ul class="authentication">
-               <li class="authentication__item"><button class="authentication-btn btn" type="button">LOG IN</button>
+               <li class="site-nav__item">
+                  <select>
+                     <option>WHY US</option>
+                     <option>Lorem</option>
+                     <option>Lorem</option>
+                  </select>
                </li>
-               <li class="authentication__item"><button class="authentication-btn btn" type="button">GET
-                     STARTED</button>
+               <li class="site-nav__item">VPN APPS</li>
+               <li class="site-nav__item">
+                  <select>
+                     <option>Support</option>
+                     <option>Lorem</option>
+                     <option>Lorem</option>
+                  </select>
+               </li>
+               <li class="site-nav__item site-nav__item--current">
+                  <select>
+                     <option>Resourse</option>
+                     <option>Lorem</option>
+                     <option>Lorem</option>
+                  </select>
                </li>
             </ul>
          </nav>
+         <ul class="authentication">
+            <li class="authentication__item"><button class="authentication__btn btn" type="button">LOG IN</button>
+            </li>
+            <li class="authentication__item"><button class="authentication__btn btn" type="button">GET
+                  STARTED</button>
+            </li>
+         </ul>
+      </div>
    </header>
 
    <!-- *Main content -->
@@ -41,7 +65,7 @@
    <main>
       <!-- Featured article -->
 
-      <section class="section">
+      <!-- <section class="section">
          <h2 class="section__title title--hidden">Featured article</h2>
          <div class="container">
             <picture>
@@ -50,7 +74,7 @@
 
                <source media="(min-width: 375px)" srcset="./images/mobile/tv.jpg 335w, images/mobile/tv@2x.jpg 670w"
                   type="image/jpg" sizes="335px">
-               <img src="#" alt="tv-addons" loading="lazy" />
+               <img src="#" width="335" height="223" alt="tv-addons" loading="lazy" />
             </picture>
             <p class="text">TV Addons: Legal battle against Canadian media giants demonstrates severe
                consequences facing developers
@@ -112,7 +136,7 @@
                   <source media="(min-width: 375px)"
                      srcset="./images/mobile/bitmap.webp 315w, ./images/mobile/bitmap@2x.webp 630w" sizes="315px"
                      type="image/webp" />
-                  <img src="#" alt="networking" loading="lazy" />
+                  <img src="#" width="315" height="200" alt="networking" loading="lazy" />
                </picture>
                <p class="text">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</p>
 
@@ -147,7 +171,7 @@
                   <source media="(min-width: 375px)"
                      srcset="./images/mobile/plane.webp 315w, ./images/mobile/plane@2x.webp 630w" sizes="315px"
                      type="image/webp" />
-                  <img src="#" alt="guides" loading="lazy" />
+                  <img src="#" width="315" height="200" alt="guides" loading="lazy" />
                </picture>
                <p class="text">How to get cheaper flights using a VPN</p>
 
@@ -178,7 +202,7 @@
                   <source media="(min-width: 375px)"
                      srcset="./images/mobile/net.webp 315w, ./images/mobile/net@2x.webp 630w" sizes="315px"
                      type="image/webp" />
-                  <img src="#" alt="net neutrality" loading="lazy" />
+                  <img src="#" width="315" height="200" alt="net neutrality" loading="lazy" />
                </picture>
                <p class="text">Net Neutrality was repealed, but the fight is far from over</p>
 
@@ -211,7 +235,7 @@
                   <source media="(min-width: 375px)"
                      srcset="./images/mobile/bitmap.webp 315w, ./images/mobile/bitmap@2x.webp 630w" sizes="315px"
                      type="image/webp" />
-                  <img src="#" alt="networking" loading="lazy" />
+                  <img src="#" width="315" height="200" alt="networking" loading="lazy" />
                </picture>
                <p class="text">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</p>
 
@@ -246,7 +270,7 @@
                   <source media="(min-width: 375px)"
                      srcset="./images/mobile/plane.webp 315w, ./images/mobile/plane@2x.webp 630w" sizes="315px"
                      type="image/webp" />
-                  <img src="#" alt="guides" loading="lazy" />
+                  <img src="#" width="315" height="200" alt="guides" loading="lazy" />
                </picture>
                <p class="text">How to get cheaper flights using a VPN</p>
 
@@ -277,7 +301,7 @@
                   <source media="(min-width: 375px)"
                      srcset="./images/mobile/net.webp 315w, ./images/mobile/net@2x.webp 630w" sizes="315px"
                      type="image/webp" />
-                  <img src="#" alt="net neutrality" loading="lazy" />
+                  <img src="#" width="315" height="200" alt="net neutrality" loading="lazy" />
                </picture>
                <p class="text">Net Neutrality was repealed, but the fight is far from over</p>
 
@@ -296,17 +320,235 @@
                <button class="post-btn btn" type="button">Older posts</button>
             </div>
 
-            <aside>
+            <aside class="aside">
                <label for="search"></label>
                <input type="search" id="search" placeholder="Search blog">
+               <div>
+                  <h2 class="aside__title">Announcements</h2>
+                  <ul class="aside-list">
+                     <li class="aside-list__item">Upcoming Changes (Live Chat, Less Censorship, More Access)</li>
+                     <li class="aside-list__item">New Servers (US Washington DC)</li>
+                     <li class="aside-list__item">New Servers (US Denver)</li>
+                     <li class="aside-list__item">Open Source: Releasing the PIA iOS Client</li>
+                     <li class="aside-list__item">Opera Extension is now available</li>
+                  </ul>
+               </div>
+
+               <div>
+                  <h2 class="aside__title">Popular posts</h2>
+                  <ul class="aside-list">
+                     <li class="aside-list__item">The Gift of Privacy</li>
+                     <li class="aside-list__item">UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous
+                        Gesture</li>
+                     <li class="aside-list__item">About the PIA Client Security and VPN Security in General</li>
+                     <li class="aside-list__item">A Private Net Is Just As Fundamental A Right As Freedom Of Speech</li>
+                     <li class="aside-list__item">Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s,
+                        So Don’t Fall For That Lie</li>
+                  </ul>
+               </div>
+
+               <div>
+                  <picture>
+                     <source media="(min-width: 1200px)"
+                        srcset="./images/desktop/privat.jpg 340w, ./images/desktop/privat@2x.jpg 680w" sizes="340px" />
+
+                     <source media="(min-width: 1200px)"
+                        srcset="./images/desktop/privat.webp 340w, ./images/desktop/privat@2x.webp 680w"
+                        type="image/webp" sizes="340px" />
+
+                     <source media="(min-width: 375px)"
+                        srcset="./images/mobile/privat.jpg 315w, ./images/mobile/privat@2x.jpg 630w" sizes="315px" />
+
+                     <source media="(min-width: 375px)"
+                        srcset="./images/mobile/privat.webp 315w, ./images/mobile/privat@2x.webp 630w" sizes="315px"
+                        type="image/webp" />
+                     <img src="#" width="315" height="420" alt="poster" loading="lazy" />
+                  </picture>
+               </div>
+
+               <div>
+                  <h2 class="aside__title">Tag cloud</h2>
+                  <picture>
+                     <source media="(min-width: 375px)" srcset="./images/tags.jpg 324w, ./images/tags@2x.jpg 648w"
+                        sizes="324px" />
+
+                     <source media="(min-width: 375px)" srcset="./images/tags.webp 324w, ./images/tags@2x.webp 648w"
+                        sizes="324px" type="image/webp" />
+                     <img src="#" width="324" height="310" alt="tag cloud" loading="lazy" />
+                  </picture>
+               </div>
             </aside>
          </div>
       </section>
 
+      <section class="section signup">
+         <div class="container">
+            <h2>Sign up today – 7 day money back guarantee</h2>
+
+            <div class="signup__box">
+               <p class="signup__text">MONTHLEY</p>
+               <p class="signup__text">6.95</p>
+               <p class="signup__text">Includes all VPN features.</p>
+               <button class="signup__btn btn" type="button">SIGN UP</button>
+            </div>
+
+            <div class="signup__box">
+               <p class="signup__text">TWO YEARS</p>
+               <p class="signup__text">2.91</p>
+               <p class="signup__text"><span class="signup__text--red">$166.80</span>$69.95 per two years
+               </p>
+               <p class="signup-box__text">Save 58%*</p>
+               <button class="signup__btn btn" type="button">SIGN UP</button>
+            </div>
+
+            <div class="signup__box">
+               <p class="signup__text">YERLY</p>
+               <p class="signup__text">3.33</p>
+               <p class="signup__text"><span class="signup__text--red">$83.40</span>$39.95 per year</p>
+               <p class="signup__text">Save 52%*</p>
+               <button class="signup__btn btn" type="button">SIGN UP</button>
+            </div>
+
+            <div class="payment">
+               <h3 class="payment__title">Ways to pay</h3>
+               <ul class="payment__list">
+                  <li class="payment__item"><img src="./images/visa.png" alt="visa"></li>
+                  <li class="payment__item"><img src="./images/mastercard.png" alt="mastercard"></li>
+                  <li class="payment__item"><img src="./images/amex.png" alt="amex"></li>
+                  <li class="payment__item"><img src="./images/paypal.png" alt="paypal"></li>
+                  <li class="payment__item"><img src="./images/Bitcoin.png" alt="bitcoin"></li>
+                  <li class="payment__item"><img src="./images/OKPay.png" alt="okpay"></li>
+                  <li class="payment__item"><img src="./images/amazon.png" alt="amazon"></li>
+               </ul>
+            </div>
+            <div class="links">
+               <ul class="links__list">
+                  <li class="links__item"><a class="links__link" href="#">How to pay anonymously</a></li>
+                  <li class="links__item"><a class="links__link" href="#">REDEEM GIFT CARD</a></li>
+               </ul>
+            </div>
+         </div>
+      </section>
 
    </main>
 
-   <footer></footer>
+   <footer class="footer">
+      <div class="container">
+         <h2 class="footer__title">Company Name</h2>
+
+         <div class="footer__box">
+            <h3 class="footer__title">Company</h3>
+            <ul class="footer__list">
+               <li class="footer__item"><a class="footer__link" href="#">About Us</a></li>
+               <li class="footer__item"><a class="footer__link" href="#">Our Team</a></li>
+               <li class="footer__item"><a class="footer__link" href="#">Careers</a></li>
+               <li class="footer__item"><a class="footer__link" href="#">Press</a></li>
+               <li class="footer__item"><a class="footer__link" href="#">In the Media</a></li>
+               <li class="footer__item"><a class="footer__link" href="#">VPN Reviews</a></li>
+               <li class="footer__item"><a class="footer__link" href="#">Companies We Support</a></li>
+               <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
+               <li class="footer__item"><a class="footer__link" href="#">Blog</a></li>
+            </ul>
+         </div>
+
+         <div class="footer-wrapper">
+            <div class="footer__box">
+               <h3 class="footer__title">Programs</h3>
+               <ul class="footer__list">
+                  <li class="footer__item"><a class="footer__link" href="#">Whitehat Security</a></li>
+                  <li class="footer__item"><a class="footer__link" href="#">Affiliates</a></li>
+               </ul>
+            </div>
+
+            <div class="footer__box">
+               <h3 class="footer__title">Learn more</h3>
+               <ul class="footer__list">
+                  <li class="footer__item"><a class="footer__link" href="#">VPN Encryption</a></li>
+                  <li class="footer__item"><a class="footer__link" href="#">Android VPN App</a></li>
+                  <li class="footer__item"><a class="footer__link" href="#">iOS VPN App</a></li>
+                  <li class="footer__item"><a class="footer__link" href="#">PIA Sitemap</a></li>
+               </ul>
+            </div>
+         </div>
+
+         <div class="footer__box">
+            <h3 class="footer__title">Legal</h3>
+            <ul class="footer__list">
+               <li class="footer__item"><a class="footer__link" href="#">Terms Of Service</a></li>
+               <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+               <li class="footer__item"><a class="footer__link" href="#">DMCA Policy</a></li>
+               <li class="footer__item"><a class="footer__link" href="#">Export Control Policy</a></li>
+            </ul>
+         </div>
+
+         <div class="footer__box">
+            <h3 class="footer__title">About</h3>
+            <p class="footer__text">Private Internet Access is the leading VPN Service provider specializing in secure,
+               encrypted VPN tunnels which create
+               several layers of privacy and security providing you safety on the internet. Our service is backed by
+               multiple gateways
+               worldwide with access in 28+ countries, 44+ regions.</p>
+            <p class="footer__text">Map data provided by Google.</p>
+            <p class="footer__text">PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis,
+               Inc.
+               All Rights Reserved.</p>
+            <p class="footer__text">PC Mag quote reprinted from www.pcmag.com with permission. © 2012 Ziff Davis, Inc.
+               All
+               Rights Reserved.</p>
+            <p class="footer__text">&#169;London Trust Media, Inc. All Rights Reserved.</p>
+         </div>
+
+         <div class="footer__box">
+            <h3 class="footer__title">Social</h3>
+            <div>
+               <a href="#">
+                  <svg width="14" height="28">
+                     <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+               </a>
+            </div>
+            <div>
+               <a href="#">
+                  <svg width="28" height="23">
+                     <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+               </a>
+            </div>
+            <div>
+               <a href="#">
+                  <svg width="34" height="22">
+                     <use href="./images/sprite.svg#icon-google"></use>
+                  </svg>
+               </a>
+            </div>
+            <div>
+               <a href="#">
+                  <svg width="28" height="28">
+                     <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+               </a>
+            </div>
+
+            <div>
+               <a href="#">
+                  <svg width="30" height="30">
+                     <use href="./images/sprite.svg#icon-face"></use>
+                  </svg>
+               </a>
+            </div>
+
+            <div>
+               <a href="#">
+                  <svg width="42" height="30">
+                     <use href="./images/sprite.svg#icon-youtube"></use>
+                  </svg>
+               </a>
+            </div>
+         </div>
+      </div>
+
+
+   </footer>  -->
 
 </body>
 

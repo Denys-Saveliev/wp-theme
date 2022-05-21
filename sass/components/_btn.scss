@@ -1,0 +1,8 @@
+.btn {
+   @include font(500, 14px, 1.28);
+   letter-spacing: 0.8px;
+   text-transform: uppercase;
+   border-radius: 30px;
+   border: none;
+   box-sizing: content-box;
+}

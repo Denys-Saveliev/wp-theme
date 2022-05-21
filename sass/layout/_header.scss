@@ -1,0 +1,143 @@
+.header__container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px 10px;
+}
+
+.navigation {
+   display: flex;
+}
+
+.mobile-menu-btn {
+   display: flex;
+   align-items: center;
+   border: none;
+   background-color: transparent;
+   margin-right: 25px;
+
+   @media screen and (min-width: 1200px) {
+      display: none;
+   }
+}
+
+.mobile-menu-btn__icon {
+   color: #22252e;
+}
+
+.logo {
+   font-family: "Inter", sans-serif;
+   @include font(400, 18px, 1.22);
+   color: #000000;
+   transition: color 250ms ease;
+
+   @media screen and (min-width: 1200px) {
+      margin-right: 245px;
+   }
+
+   &:hover,
+   &:focus {
+      cursor: pointer;
+      color: $elements-color;
+   }
+}
+
+.site-nav {
+   display: none;
+
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: flex-end;
+   }
+}
+
+.site-nav__item {
+   position: relative;
+}
+
+.site-nav__item--current::after {
+   content: "";
+   position: absolute;
+   top: 110%;
+   left: 0;
+   width: 88px;
+   border: 3px solid $elements-color;
+}
+
+.site-nav__item:not(:last-child) {
+   margin-right: 30px;
+}
+
+.site-nav__item,
+select {
+   color: $secondary-text-color;
+
+   &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+   }
+}
+
+select {
+   border: none;
+   width: 77px;
+   text-transform: uppercase;
+   -webkit-appearance: none;
+   background-image: url("/images/arrow-down.svg");
+   background-repeat: no-repeat;
+   background-position: 95% 33%;
+   background-size: 10px 5px;
+}
+
+.site-nav__item:nth-child(3) select {
+   width: 87px;
+}
+
+.site-nav__item:last-child select {
+   width: 95px;
+}
+
+.authentication {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.authentication__item:first-child {
+   display: none;
+
+   @media screen and (min-width: 1200px) {
+      display: block;
+      margin-right: 10px;
+   }
+}
+
+.authentication__item:first-child .authentication__btn {
+   border: 1px solid $elements-color;
+   padding: 11px 22px;
+   color: $elements-color;
+   background-color: $main-bg-color;
+   transition: all 250ms ease;
+
+   &:hover,
+   &:focus {
+      cursor: pointer;
+      color: $main-bg-color;
+      background-color: $elements-color;
+   }
+}
+
+.authentication__item:last-child .authentication__btn {
+   color: $main-bg-color;
+   background-color: $elements-color;
+   border: 1px solid transparent;
+   padding: 11px 15px;
+   transition: all 250ms ease;
+
+   &:hover,
+   &:focus {
+      cursor: pointer;
+      color: $elements-color;
+      background-color: $main-bg-color;
+      border: 1px solid $elements-color;
+   }
+}

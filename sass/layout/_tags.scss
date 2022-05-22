@@ -1,0 +1,69 @@
+.tags-section {
+   display: none;
+
+   @media screen and (min-width: 1200px) {
+      display: block;
+      padding-top: 30px;
+   }
+}
+
+.tags-container {
+   display: flex;
+   align-items: center;
+   padding: 0 35px;
+   height: 60px;
+   background-color: #f7f7f7;
+   border-radius: 4px;
+}
+
+.tags-title,
+.tags__link,
+.contacts__link {
+   @include font(500, 14px, 1.29);
+}
+
+.tags-title {
+   margin-right: 45px;
+   color: $secondary-text-color;
+}
+
+.tags {
+   display: flex;
+}
+
+.tags__item:not(:last-child) {
+   margin-right: 35px;
+}
+
+.tags__link {
+   padding: 15px 0;
+   text-transform: uppercase;
+   color: $elements-color;
+   transition: color 250ms ease;
+
+   &:hover,
+   &:focus {
+      color: $secondary-text-color;
+   }
+}
+
+.contacts {
+   display: flex;
+   margin-left: auto;
+}
+
+.contacts__item:first-child {
+   margin-right: 40px;
+}
+
+.contacts__link {
+   padding: 15px 0;
+   text-transform: uppercase;
+   color: $secondary-text-color;
+   transition: color 250ms ease;
+
+   &:hover,
+   &:focus {
+      color: $elements-color;
+   }
+}

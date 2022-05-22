@@ -124,7 +124,18 @@
          </div>
       </section>
 
-      <!-- <section class="section">
+      <section class="section search-section">
+         <h2 class="title--hidden">Search field</h2>
+         <div class="container">
+            <label class="search-label">
+               <input class="search-input" type="search" placeholder="Search blog">
+            </label>
+
+
+         </div>
+      </section>
+
+      <section class="section">
          <div class="container">
             <h2 class="section__title">Resent posts</h2>
             <div>
@@ -325,69 +336,68 @@
                </div>
                <button class="post-btn btn" type="button">Older posts</button>
             </div>
-
-            <aside class="aside">
-               <label for="search"></label>
-               <input type="search" id="search" placeholder="Search blog">
-               <div>
-                  <h2 class="aside__title">Announcements</h2>
-                  <ul class="aside-list">
-                     <li class="aside-list__item">Upcoming Changes (Live Chat, Less Censorship, More Access)</li>
-                     <li class="aside-list__item">New Servers (US Washington DC)</li>
-                     <li class="aside-list__item">New Servers (US Denver)</li>
-                     <li class="aside-list__item">Open Source: Releasing the PIA iOS Client</li>
-                     <li class="aside-list__item">Opera Extension is now available</li>
-                  </ul>
-               </div>
-
-               <div>
-                  <h2 class="aside__title">Popular posts</h2>
-                  <ul class="aside-list">
-                     <li class="aside-list__item">The Gift of Privacy</li>
-                     <li class="aside-list__item">UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous
-                        Gesture</li>
-                     <li class="aside-list__item">About the PIA Client Security and VPN Security in General</li>
-                     <li class="aside-list__item">A Private Net Is Just As Fundamental A Right As Freedom Of Speech</li>
-                     <li class="aside-list__item">Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s,
-                        So Don’t Fall For That Lie</li>
-                  </ul>
-               </div>
-
-               <div>
-                  <picture>
-                     <source media="(min-width: 1200px)"
-                        srcset="./images/desktop/privat.jpg 340w, ./images/desktop/privat@2x.jpg 680w" sizes="340px" />
-
-                     <source media="(min-width: 1200px)"
-                        srcset="./images/desktop/privat.webp 340w, ./images/desktop/privat@2x.webp 680w"
-                        type="image/webp" sizes="340px" />
-
-                     <source media="(min-width: 375px)"
-                        srcset="./images/mobile/privat.jpg 315w, ./images/mobile/privat@2x.jpg 630w" sizes="315px" />
-
-                     <source media="(min-width: 375px)"
-                        srcset="./images/mobile/privat.webp 315w, ./images/mobile/privat@2x.webp 630w" sizes="315px"
-                        type="image/webp" />
-                     <img src="#" width="315" height="420" alt="poster" loading="lazy" />
-                  </picture>
-               </div>
-
-               <div>
-                  <h2 class="aside__title">Tag cloud</h2>
-                  <picture>
-                     <source media="(min-width: 375px)" srcset="./images/tags.jpg 324w, ./images/tags@2x.jpg 648w"
-                        sizes="324px" />
-
-                     <source media="(min-width: 375px)" srcset="./images/tags.webp 324w, ./images/tags@2x.webp 648w"
-                        sizes="324px" type="image/webp" />
-                     <img src="#" width="324" height="310" alt="tag cloud" loading="lazy" />
-                  </picture>
-               </div>
-            </aside>
          </div>
       </section>
 
-      <section class="section signup">
+      <!-- <aside class="aside">
+         <label for="search"></label>
+         <input type="search" id="search" placeholder="Search blog">
+         <div>
+            <h2 class="aside__title">Announcements</h2>
+            <ul class="aside-list">
+               <li class="aside-list__item">Upcoming Changes (Live Chat, Less Censorship, More Access)</li>
+               <li class="aside-list__item">New Servers (US Washington DC)</li>
+               <li class="aside-list__item">New Servers (US Denver)</li>
+               <li class="aside-list__item">Open Source: Releasing the PIA iOS Client</li>
+               <li class="aside-list__item">Opera Extension is now available</li>
+            </ul>
+         </div>
+      
+         <div>
+            <h2 class="aside__title">Popular posts</h2>
+            <ul class="aside-list">
+               <li class="aside-list__item">The Gift of Privacy</li>
+               <li class="aside-list__item">UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous
+                  Gesture</li>
+               <li class="aside-list__item">About the PIA Client Security and VPN Security in General</li>
+               <li class="aside-list__item">A Private Net Is Just As Fundamental A Right As Freedom Of Speech</li>
+               <li class="aside-list__item">Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s,
+                  So Don’t Fall For That Lie</li>
+            </ul>
+         </div>
+      
+         <div>
+            <picture>
+               <source media="(min-width: 1200px)"
+                  srcset="./images/desktop/privat.jpg 340w, ./images/desktop/privat@2x.jpg 680w" sizes="340px" />
+      
+               <source media="(min-width: 1200px)"
+                  srcset="./images/desktop/privat.webp 340w, ./images/desktop/privat@2x.webp 680w" type="image/webp"
+                  sizes="340px" />
+      
+               <source media="(min-width: 375px)" srcset="./images/mobile/privat.jpg 315w, ./images/mobile/privat@2x.jpg 630w"
+                  sizes="315px" />
+      
+               <source media="(min-width: 375px)"
+                  srcset="./images/mobile/privat.webp 315w, ./images/mobile/privat@2x.webp 630w" sizes="315px"
+                  type="image/webp" />
+               <img src="#" width="315" height="420" alt="poster" loading="lazy" />
+            </picture>
+         </div>
+      
+         <div>
+            <h2 class="aside__title">Tag cloud</h2>
+            <picture>
+               <source media="(min-width: 375px)" srcset="./images/tags.jpg 324w, ./images/tags@2x.jpg 648w" sizes="324px" />
+      
+               <source media="(min-width: 375px)" srcset="./images/tags.webp 324w, ./images/tags@2x.webp 648w" sizes="324px"
+                  type="image/webp" />
+               <img src="#" width="324" height="310" alt="tag cloud" loading="lazy" />
+            </picture>
+         </div>
+      </aside> -->
+
+      <!-- <section class="section signup">
          <div class="container">
             <h2>Sign up today – 7 day money back guarantee</h2>
 

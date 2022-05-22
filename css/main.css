@@ -689,4 +689,51 @@ select {
 .contacts__link:hover, .contacts__link:focus {
   color: #4cb649;
 }
+
+.search-section {
+  padding-top: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .search-section {
+    display: none;
+  }
+}
+
+.search-label {
+  position: relative;
+}
+
+.search-label::before {
+  content: "";
+  position: absolute;
+  top: 3%;
+  left: 20px;
+  background-image: url("/images/search.svg");
+  width: 18px;
+  height: 18px;
+}
+
+.search-input {
+  padding-left: 45px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #d7d8d9;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms ease;
+}
+
+.search-input:hover, .search-input:focus {
+  border-color: #4cb649;
+}
+
+input::placeholder {
+  display: block;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.56;
+  transform: translateX(10px);
+  color: #22252e;
+}
 /*# sourceMappingURL=main.css.map */

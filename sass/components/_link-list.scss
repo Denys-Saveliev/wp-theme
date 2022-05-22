@@ -1,0 +1,21 @@
+.link-list {
+   display: flex;
+   margin-bottom: 12px;
+}
+
+.link-list__item:not(:last-child) {
+   margin-right: 5px;
+}
+
+.link-list__link {
+   @include font(400, 12px, 1.33);
+   text-transform: uppercase;
+   color: $elements-color;
+   transition: opacity 250ms ease;
+
+   &:hover,
+   &:focus {
+      cursor: pointer;
+      opacity: 0.8;
+   }
+}

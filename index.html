@@ -65,36 +65,40 @@
    <main>
       <!-- Featured article -->
 
-      <section class="section">
+      <section class="section featured-section">
          <h2 class="section__title title--hidden">Featured article</h2>
          <div class="container">
-            <picture>
-               <source media="(min-width: 1200px)" srcset="./images/desktop/tv.jpg 600w, images/desktop/tv@2x.jpg 1200w"
-                  sizes="600px">
+            <div class="featured-wrapper">
+               <picture>
+                  <source media="(min-width: 1200px)"
+                     srcset="./images/desktop/tv.jpg 600w, images/desktop/tv@2x.jpg 1200w" sizes="600px">
 
-               <source media="(min-width: 375px)" srcset="./images/mobile/tv.jpg 335w, images/mobile/tv@2x.jpg 670w"
-                  type="image/jpg" sizes="335px">
-               <img src="#" width="335" height="223" alt="tv-addons" loading="lazy" />
-            </picture>
-            <p class="text">TV Addons: Legal battle against Canadian media giants demonstrates severe
-               consequences facing developers
-               accused of
-               copyright infringement</p>
+                  <source media="(min-width: 375px)" srcset="./images/mobile/tv.jpg 335w, images/mobile/tv@2x.jpg 670w"
+                     type="image/jpg" sizes="335px">
+                  <img class="featured-img" src="#" width="335" height="223" alt="tv-addons" loading="lazy" />
+               </picture>
 
-            <p class="text">Danica Sergison<span class="element">| JUL 08, 2018</span></p>
-            <ul class="link-list">
-               <li class="link-list__item"><a class="link-list__link" href="#">Copyright,</a></li>
-               <li class="link-list__item"><a class="link-list__link" href="#">News,</a></li>
-               <li class="link-list__item"><a class="link-list__link" href="#">Open Source,</a></li>
-               <li class="link-list__item"><a class="link-list__link" href="#">Privacy</a></li>
-            </ul>
-            <div>
-               <svg width="11" height="11">
-                  <use href="./images/sprite.svg#icon-comment"></use>
-               </svg>
-               <a href="#">0</a>
+               <div class="text-box">
+                  <p class="description-text">TV Addons: Legal battle against Canadian media giants demonstrates severe
+                     consequences facing developers
+                     accused of
+                     copyright infringement</p>
+
+                  <p class="author-text">Danica Sergison<span class="author-element">|&nbsp; JUL 08, 2018</span></p>
+                  <ul class="link-list">
+                     <li class="link-list__item"><a class="link-list__link" href="#">Copyright,</a></li>
+                     <li class="link-list__item"><a class="link-list__link" href="#">News,</a></li>
+                     <li class="link-list__item"><a class="link-list__link" href="#">Open Source,</a></li>
+                     <li class="link-list__item"><a class="link-list__link" href="#">Privacy</a></li>
+                  </ul>
+                  <div class="comment-box">
+                     <svg class="comment-icon">
+                        <use href="./images/sprite.svg#icon-comment"></use>
+                     </svg>
+                     <a class="comment-link" href="#">0</a>
+                  </div>
+               </div>
             </div>
-         </div>
       </section>
 
       <!-- <section class="section">

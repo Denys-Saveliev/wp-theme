@@ -56,39 +56,3 @@
    margin-left: 8px;
    color: $third-text-color;
 }
-
-.comment-box {
-   display: flex;
-   align-items: center;
-   margin-bottom: 14px;
-
-   @media screen and(min-width:1200px) {
-      margin: 0;
-   }
-}
-
-.comment-icon {
-   width: 16px;
-   height: 16px;
-   stroke: $footer-text-color;
-   fill: $main-bg-color;
-   margin-right: 9px;
-   stroke-width: 1px;
-
-   @media screen and(min-width: 1200px) {
-      width: 11px;
-      height: 11px;
-      stroke-width: 1.5px;
-   }
-}
-
-.comment-link {
-   @include font(400, 14px, 1.57);
-   color: $footer-text-color;
-   transition: color 250ms ease;
-
-   &:hover,
-   &:focus {
-      color: $elements-color;
-   }
-}

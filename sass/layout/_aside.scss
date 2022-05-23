@@ -1,0 +1,32 @@
+.aside {
+   padding-top: 70px;
+}
+
+.search-label--display {
+   display: none;
+
+   @media screen and (min-width: 1200px) {
+      display: block;
+   }
+}
+
+.article-wrapper {
+   width: 315px;
+   margin: 0 auto;
+}
+
+.subtitle-box {
+   display: flex;
+}
+
+.aside__subtitle {
+   position: relative;
+   @include font(300, 24px, 1.42);
+   margin-left: 30px;
+}
+
+.aside-list {
+   list-style: url(/images/list-style.svg);
+   width: 303px;
+   margin-left: auto;
+}

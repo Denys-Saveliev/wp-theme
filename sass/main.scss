@@ -10,11 +10,15 @@
 // *Components
 @import "./components/container";
 @import "./components/btn";
-@import "./components/link-list";
+@import "./components/links-list";
 @import "./components/section__title";
+@import "./components/comment-box";
+@import "./components/search-input";
 
 // *Layout
 @import "./layout/header";
 @import "./layout/featured-article";
 @import "./layout/tags";
 @import "./layout/search-section";
+@import "./layout/posts-section";
+@import "./layout/aside";

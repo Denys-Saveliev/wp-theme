@@ -1,13 +1,13 @@
-.link-list {
+.links-list {
    display: flex;
    margin-bottom: 12px;
 }
 
-.link-list__item:not(:last-child) {
+.links-list__item:not(:last-child) {
    margin-right: 5px;
 }
 
-.link-list__link {
+.links-list__link {
    @include font(400, 12px, 1.33);
    text-transform: uppercase;
    color: $elements-color;

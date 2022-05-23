@@ -85,11 +85,11 @@
                      copyright infringement</p>
 
                   <p class="author-text">Danica Sergison<span class="author-element">|&nbsp; JUL 08, 2018</span></p>
-                  <ul class="link-list">
-                     <li class="link-list__item"><a class="link-list__link" href="#">Copyright,</a></li>
-                     <li class="link-list__item"><a class="link-list__link" href="#">News,</a></li>
-                     <li class="link-list__item"><a class="link-list__link" href="#">Open Source,</a></li>
-                     <li class="link-list__item"><a class="link-list__link" href="#">Privacy</a></li>
+                  <ul class="links-list posts-list">
+                     <li class="links-list__item"><a class="links-list__link" href="#">Copyright,</a></li>
+                     <li class="links-list__item"><a class="links-list__link" href="#">News,</a></li>
+                     <li class="links-list__item"><a class="links-list__link" href="#">Open Source,</a></li>
+                     <li class="links-list__item"><a class="links-list__link" href="#">Privacy</a></li>
                   </ul>
                   <div class="comment-box">
                      <svg class="comment-icon">
@@ -105,7 +105,7 @@
          <div class="container">
             <div class="tags-container">
                <h2 class="section__title title--hidden">Tags</h2>
-               <h3 class="tags-title">Tags:</h3>
+               <h3 class="tags-subtitle">Tags:</h3>
                <ul class="tags">
                   <li class="tags__item"><a class="tags__link" href="#">bitcoin</a></li>
                   <li class="tags__item"><a class="tags__link" href="#">bittorrent</a></li>
@@ -130,15 +130,13 @@
             <label class="search-label">
                <input class="search-input" type="search" placeholder="Search blog">
             </label>
-
-
          </div>
       </section>
 
-      <section class="section">
+      <section class="section posts-section">
          <div class="container">
-            <h2 class="section__title">Resent posts</h2>
-            <div>
+            <h2 class="section__title posts-title">Resent posts</h2>
+            <div class="posts-wrapper">
                <picture>
                   <source media="(min-width: 1200px)"
                      srcset="./images/desktop/bitmap.jpg 280w, ./images/desktop/bitmap@2x.jpg 560w" sizes="280px" />
@@ -153,27 +151,32 @@
                   <source media="(min-width: 375px)"
                      srcset="./images/mobile/bitmap.webp 315w, ./images/mobile/bitmap@2x.webp 630w" sizes="315px"
                      type="image/webp" />
-                  <img src="#" width="315" height="200" alt="networking" loading="lazy" />
+                  <img class="posts-img" src="#" width="315" height="200" alt="networking" loading="lazy" />
                </picture>
-               <p class="text">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</p>
+               <div class="posts-box">
+                  <p class="description-text posts-text">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and
+                     Broken
+                     Promises</p>
 
-               <p class="text">Derek Zimmer<span class="element">| JUL 25, 2018</span></p>
-               <ul class="link-list">
-                  <li class="link-list__item"><a class="link-list__link" href="#">Governments,</a></li>
-                  <li class="link-list__item"><a class="link-list__link" href="#">Networking,</a></li>
-                  <li class="link-list__item"><a class="link-list__link" href="#">Open Source,</a></li>
-                  <li class="link-list__item"><a class="link-list__link" href="#">Privacy,</a></li>
-                  <li class="link-list__item"><a class="link-list__link" href="#">security</a></li>
-               </ul>
-               <div>
-                  <svg width="11" height="11">
-                     <use href="./images/sprite.svg#icon-comment"></use>
-                  </svg>
-                  <a href="#">0</a>
+                  <p class="author-text posts-text">Derek Zimmer<span class="author-element">|&nbsp; JUL 25, 2018</span>
+                  </p>
+                  <ul class="links-list posts-list">
+                     <li class="links-list__item"><a class="links-list__link" href="#">Governments,</a></li>
+                     <li class="links-list__item"><a class="links-list__link" href="#">Networking,</a></li>
+                     <li class="links-list__item"><a class="links-list__link" href="#">Open Source,</a></li>
+                     <li class="links-list__item"><a class="links-list__link" href="#">Privacy,</a></li>
+                     <li class="links-list__item"><a class="links-list__link" href="#">security</a></li>
+                  </ul>
+                  <div class="comment-box posts-comment">
+                     <svg class="comment-icon">
+                        <use href="./images/sprite.svg#icon-comment"></use>
+                     </svg>
+                     <a class="comment-link" href="#">0</a>
+                  </div>
                </div>
             </div>
 
-            <div>
+            <div class="posts-wrapper">
                <picture>
                   <source media="(min-width: 1200px)"
                      srcset="./images/desktop/plane.jpg 280w, ./images/desktop/plane@2x.jpg 560w" sizes="280px" />
@@ -188,23 +191,25 @@
                   <source media="(min-width: 375px)"
                      srcset="./images/mobile/plane.webp 315w, ./images/mobile/plane@2x.webp 630w" sizes="315px"
                      type="image/webp" />
-                  <img src="#" width="315" height="200" alt="guides" loading="lazy" />
+                  <img class="posts-img" src="#" width="315" height="200" alt="guides" loading="lazy" />
                </picture>
-               <p class="text">How to get cheaper flights using a VPN</p>
+               <div class="posts-box">
+                  <p class="description-text posts-text">How to get cheaper flights using a VPN</p>
 
-               <p class="text">Jayson<span class="element">| JUL 24, 2018</span></p>
-               <ul class="link-list">
-                  <li class="link-list__item"><a class="link-list__link" href="#">Guides</a></li>
-               </ul>
-               <div>
-                  <svg width="11" height="11">
-                     <use href="./images/sprite.svg#icon-comment"></use>
-                  </svg>
-                  <a href="#">0</a>
+                  <p class="author-text posts-text">Jayson<span class="element">&nbsp;| JUL 24, 2018</span></p>
+                  <ul class="links-list posts-list">
+                     <li class="links-list__item"><a class="links-list__link" href="#">Guides</a></li>
+                  </ul>
+                  <div class="comment-box">
+                     <svg class="comment-icon">
+                        <use href="./images/sprite.svg#icon-comment"></use>
+                     </svg>
+                     <a class="comment-link" href="#">0</a>
+                  </div>
                </div>
             </div>
 
-            <div>
+            <div class="posts-wrapper">
                <picture>
                   <source media="(min-width: 1200px)"
                      srcset="./images/desktop/net.jpg 280w, ./images/desktop/net@2x.jpg 560w" sizes="280px" />
@@ -219,25 +224,27 @@
                   <source media="(min-width: 375px)"
                      srcset="./images/mobile/net.webp 315w, ./images/mobile/net@2x.webp 630w" sizes="315px"
                      type="image/webp" />
-                  <img src="#" width="315" height="200" alt="net neutrality" loading="lazy" />
+                  <img class="posts-img" src="#" width="315" height="200" alt="net neutrality" loading="lazy" />
                </picture>
-               <p class="text">Net Neutrality was repealed, but the fight is far from over</p>
+               <div class="posts-box">
+                  <p class="description-text posts-text">Net Neutrality was repealed, but the fight is far from over</p>
 
-               <p class="text">Chris Miller<span class="element">| JUL 22, 2018</span></p>
-               <ul class="link-list">
-                  <li class="link-list__item"><a class="link-list__link" href="#">Governments,</a></li>
-                  <li class="link-list__item"><a class="link-list__link" href="#">net neutrality,</a></li>
-                  <li class="link-list__item"><a class="link-list__link" href="#">news</a></li>
-               </ul>
-               <div>
-                  <svg width="11" height="11">
-                     <use href="./images/sprite.svg#icon-comment"></use>
-                  </svg>
-                  <a href="#">0</a>
+                  <p class="author-text posts-text">Chris Miller<span class="element">&nbsp;| JUL 22, 2018</span></p>
+                  <ul class="links-list posts-list">
+                     <li class="links-list__item"><a class="links-list__link" href="#">Governments,</a></li>
+                     <li class="links-list__item"><a class="links-list__link" href="#">net neutrality,</a></li>
+                     <li class="links-list__item"><a class="links-list__link" href="#">news</a></li>
+                  </ul>
+                  <div class="comment-box">
+                     <svg class="comment-icon">
+                        <use href="./images/sprite.svg#icon-comment"></use>
+                     </svg>
+                     <a class="comment-link" href="#">0</a>
+                  </div>
                </div>
             </div>
 
-            <div>
+            <div class="posts-wrapper">
                <picture>
                   <source media="(min-width: 1200px)"
                      srcset="./images/desktop/bitmap.jpg 280w, ./images/desktop/bitmap@2x.jpg 560w" sizes="280px" />
@@ -252,27 +259,31 @@
                   <source media="(min-width: 375px)"
                      srcset="./images/mobile/bitmap.webp 315w, ./images/mobile/bitmap@2x.webp 630w" sizes="315px"
                      type="image/webp" />
-                  <img src="#" width="315" height="200" alt="networking" loading="lazy" />
+                  <img class="posts-img" src="#" width="315" height="200" alt="networking" loading="lazy" />
                </picture>
-               <p class="text">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</p>
+               <div class="posts-box ">
+                  <p class="description-text posts-text">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and
+                     Broken
+                     Promises</p>
 
-               <p class="text">Derek Zimmer<span class="element">| JUL 25, 2018</span></p>
-               <ul class="link-list">
-                  <li class="link-list__item"><a class="link-list__link" href="#">Governments,</a></li>
-                  <li class="link-list__item"><a class="link-list__link" href="#">Networking,</a></li>
-                  <li class="link-list__item"><a class="link-list__link" href="#">Open Source,</a></li>
-                  <li class="link-list__item"><a class="link-list__link" href="#">Privacy,</a></li>
-                  <li class="link-list__item"><a class="link-list__link" href="#">security</a></li>
-               </ul>
-               <div>
-                  <svg width="11" height="11">
-                     <use href="./images/sprite.svg#icon-comment"></use>
-                  </svg>
-                  <a href="#">0</a>
+                  <p class="author-text post-text">Derek Zimmer<span class="element">&nbsp;| JUL 25, 2018</span></p>
+                  <ul class="links-list posts-list">
+                     <li class="links-list__item"><a class="links-list__link" href="#">Governments,</a></li>
+                     <li class="links-list__item"><a class="links-list__link" href="#">Networking,</a></li>
+                     <li class="links-list__item"><a class="links-list__link" href="#">Open Source,</a></li>
+                     <li class="links-list__item"><a class="links-list__link" href="#">Privacy,</a></li>
+                     <li class="links-list__item"><a class="links-list__link" href="#">security</a></li>
+                  </ul>
+                  <div class="comment-box">
+                     <svg class="comment-icon">
+                        <use href="./images/sprite.svg#icon-comment"></use>
+                     </svg>
+                     <a class="comment-link" href="#">0</a>
+                  </div>
                </div>
             </div>
 
-            <div>
+            <div class="posts-wrapper">
                <picture>
                   <source media="(min-width: 1200px)"
                      srcset="./images/desktop/plane.jpg 280w, ./images/desktop/plane@2x.jpg 560w" sizes="280px" />
@@ -287,23 +298,27 @@
                   <source media="(min-width: 375px)"
                      srcset="./images/mobile/plane.webp 315w, ./images/mobile/plane@2x.webp 630w" sizes="315px"
                      type="image/webp" />
-                  <img src="#" width="315" height="200" alt="guides" loading="lazy" />
+                  <img class="posts-img" src="#" width="315" height="200" alt="guides" loading="lazy" />
                </picture>
-               <p class="text">How to get cheaper flights using a VPN</p>
+               <div class="posts-box">
+                  <p class="description-text posts-text">How to get cheaper flights using a VPN</p>
 
-               <p class="text">Jayson<span class="element">| JUL 24, 2018</span></p>
-               <ul class="link-list">
-                  <li class="link-list__item"><a class="link-list__link" href="#">Guides</a></li>
-               </ul>
-               <div>
-                  <svg width="11" height="11">
-                     <use href="./images/sprite.svg#icon-comment"></use>
-                  </svg>
-                  <a href="#">0</a>
+                  <p class="author-text posts-text">Jayson<span class="element">&nbsp;| JUL 24, 2018</span></p>
+                  <ul class="links-list posts-list">
+                     <li class="links-list__item"><a class="links-list__link" href="#">Guides</a></li>
+                  </ul>
+                  <div>
+                     <div class="comment-box">
+                        <svg class="comment-icon">
+                           <use href="./images/sprite.svg#icon-comment"></use>
+                        </svg>
+                        <a class="comment-link" href="#">0</a>
+                     </div>
+                  </div>
                </div>
             </div>
 
-            <div>
+            <div class="posts-wrapper">
                <picture>
                   <source media="(min-width: 1200px)"
                      srcset="./images/desktop/net.jpg 280w, ./images/desktop/net@2x.jpg 560w" sizes="280px" />
@@ -318,84 +333,102 @@
                   <source media="(min-width: 375px)"
                      srcset="./images/mobile/net.webp 315w, ./images/mobile/net@2x.webp 630w" sizes="315px"
                      type="image/webp" />
-                  <img src="#" width="315" height="200" alt="net neutrality" loading="lazy" />
+                  <img class="posts-img" src="#" width="315" height="200" alt="net neutrality" loading="lazy" />
                </picture>
-               <p class="text">Net Neutrality was repealed, but the fight is far from over</p>
+               <div class="posts-box">
+                  <p class="description-text posts-text">Net Neutrality was repealed, but the fight is far from over</p>
 
-               <p class="text">Chris Miller<span class="element">| JUL 22, 2018</span></p>
-               <ul class="link-list">
-                  <li class="link-list__item"><a class="link-list__link" href="#">Governments,</a></li>
-                  <li class="link-list__item"><a class="link-list__link" href="#">net neutrality,</a></li>
-                  <li class="link-list__item"><a class="link-list__link" href="#">news</a></li>
-               </ul>
-               <div>
-                  <svg width="11" height="11">
-                     <use href="./images/sprite.svg#icon-comment"></use>
-                  </svg>
-                  <a href="#">0</a>
+                  <p class="author-text posts-text">Chris Miller<span class="element">&nbsp;| JUL 22, 2018</span></p>
+                  <ul class="links-list posts-list">
+                     <li class="links-list__item"><a class="links-list__link" href="#">Governments,</a></li>
+                     <li class="links-list__item"><a class="links-list__link" href="#">net neutrality,</a></li>
+                     <li class="links-list__item"><a class="links-list__link" href="#">news</a></li>
+                  </ul>
+                  <div class="comment-box">
+                     <svg class="comment-icon">
+                        <use href="./images/sprite.svg#icon-comment"></use>
+                     </svg>
+                     <a class="comment-link" href="#">0</a>
+                  </div>
                </div>
-               <button class="post-btn btn" type="button">Older posts</button>
             </div>
+            <button class="posts-btn btn" type="button">Older posts</button>
          </div>
       </section>
 
-      <!-- <aside class="aside">
-         <label for="search"></label>
-         <input type="search" id="search" placeholder="Search blog">
-         <div>
-            <h2 class="aside__title">Announcements</h2>
-            <ul class="aside-list">
-               <li class="aside-list__item">Upcoming Changes (Live Chat, Less Censorship, More Access)</li>
-               <li class="aside-list__item">New Servers (US Washington DC)</li>
-               <li class="aside-list__item">New Servers (US Denver)</li>
-               <li class="aside-list__item">Open Source: Releasing the PIA iOS Client</li>
-               <li class="aside-list__item">Opera Extension is now available</li>
-            </ul>
-         </div>
-      
-         <div>
-            <h2 class="aside__title">Popular posts</h2>
-            <ul class="aside-list">
-               <li class="aside-list__item">The Gift of Privacy</li>
-               <li class="aside-list__item">UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous
-                  Gesture</li>
-               <li class="aside-list__item">About the PIA Client Security and VPN Security in General</li>
-               <li class="aside-list__item">A Private Net Is Just As Fundamental A Right As Freedom Of Speech</li>
-               <li class="aside-list__item">Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s,
-                  So Don’t Fall For That Lie</li>
-            </ul>
-         </div>
-      
-         <div>
-            <picture>
-               <source media="(min-width: 1200px)"
-                  srcset="./images/desktop/privat.jpg 340w, ./images/desktop/privat@2x.jpg 680w" sizes="340px" />
-      
-               <source media="(min-width: 1200px)"
-                  srcset="./images/desktop/privat.webp 340w, ./images/desktop/privat@2x.webp 680w" type="image/webp"
-                  sizes="340px" />
-      
-               <source media="(min-width: 375px)" srcset="./images/mobile/privat.jpg 315w, ./images/mobile/privat@2x.jpg 630w"
-                  sizes="315px" />
-      
-               <source media="(min-width: 375px)"
-                  srcset="./images/mobile/privat.webp 315w, ./images/mobile/privat@2x.webp 630w" sizes="315px"
-                  type="image/webp" />
-               <img src="#" width="315" height="420" alt="poster" loading="lazy" />
-            </picture>
-         </div>
-      
-         <div>
-            <h2 class="aside__title">Tag cloud</h2>
-            <picture>
-               <source media="(min-width: 375px)" srcset="./images/tags.jpg 324w, ./images/tags@2x.jpg 648w" sizes="324px" />
-      
-               <source media="(min-width: 375px)" srcset="./images/tags.webp 324w, ./images/tags@2x.webp 648w" sizes="324px"
-                  type="image/webp" />
-               <img src="#" width="324" height="310" alt="tag cloud" loading="lazy" />
-            </picture>
-         </div>
-      </aside> -->
+      <aside class="aside">
+         <div class="container">
+            <h2 class="aside-title title--hidden">Other posts</h2>
+            <label class="search-label search-label--display">
+               <input class="search-input" type="search" placeholder="Search blog">
+            </label>
+            <div class="article-wrapper">
+               <div class="subtitle-box">
+                  <svg class="aside-icon" width="40" height="40">
+                     <use href="./images/sprite.svg#icon-bell"></use>
+                  </svg>
+                  <h3 class="aside__subtitle">Announcements</h3>
+               </div>
+               <ul class="aside-list">
+                  <li class="aside-list__item">Upcoming Changes (Live Chat, Less Censorship, More Access)</li>
+                  <li class="aside-list__item">New Servers (US Washington DC)</li>
+                  <li class="aside-list__item">New Servers (US Denver)</li>
+                  <li class="aside-list__item">Open Source: Releasing the PIA iOS Client</li>
+                  <li class="aside-list__item">Opera Extension is now available</li>
+               </ul>
+            </div>
+
+            <div class="article-wrapper">
+               <div class="article-wrapper">
+                  <div class="subtitle-box">
+                     <svg class="aside-icon">
+                        <use href="./images/wifi.svg"></use>
+                     </svg>
+                     <h3 class="aside__subtitle">Popular posts</h3>
+                  </div>
+                  <ul class="aside-list">
+                     <li class="aside-list__item">The Gift of Privacy</li>
+                     <li class="aside-list__item">UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous
+                        Gesture</li>
+                     <li class="aside-list__item">About the PIA Client Security and VPN Security in General</li>
+                     <li class="aside-list__item">A Private Net Is Just As Fundamental A Right As Freedom Of Speech</li>
+                     <li class="aside-list__item">Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s,
+                        So Don’t Fall For That Lie</li>
+                  </ul>
+               </div>
+
+               <div class="article-wrapper">
+                  <picture>
+                     <source media="(min-width: 1200px)"
+                        srcset="./images/desktop/privat.jpg 340w, ./images/desktop/privat@2x.jpg 680w" sizes="340px" />
+
+                     <source media="(min-width: 1200px)"
+                        srcset="./images/desktop/privat.webp 340w, ./images/desktop/privat@2x.webp 680w"
+                        type="image/webp" sizes="340px" />
+
+                     <source media="(min-width: 375px)"
+                        srcset="./images/mobile/privat.jpg 315w, ./images/mobile/privat@2x.jpg 630w" sizes="315px" />
+
+                     <source media="(min-width: 375px)"
+                        srcset="./images/mobile/privat.webp 315w, ./images/mobile/privat@2x.webp 630w" sizes="315px"
+                        type="image/webp" />
+                     <img src="#" width="315" height="420" alt="poster" loading="lazy" />
+                  </picture>
+               </div>
+
+               <div class="article-wrapper">
+                  <h3 class="aside__subtitle">Tag cloud</h3>
+                  <picture>
+                     <source media="(min-width: 375px)" srcset="./images/tags.jpg 324w, ./images/tags@2x.jpg 648w"
+                        sizes="324px" />
+
+                     <source media="(min-width: 375px)" srcset="./images/tags.webp 324w, ./images/tags@2x.webp 648w"
+                        sizes="324px" type="image/webp" />
+                     <img src="#" width="324" height="310" alt="tag cloud" loading="lazy" />
+                  </picture>
+               </div>
+            </div>
+      </aside>
 
       <!-- <section class="section signup">
          <div class="container">

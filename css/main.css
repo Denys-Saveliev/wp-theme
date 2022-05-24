@@ -472,11 +472,11 @@ input::placeholder {
 }
 
 .article__subtitle--bell::before {
-  background-image: url(/images/bell.svg);
+  background-image: url("images/bell.svg");
 }
 
 .article__subtitle--wifi::before {
-  background-image: url(/images/wifi.svg);
+  background-image: url("images/wifi.svg");
 }
 
 .article__subtitle--bell::before,
@@ -498,7 +498,7 @@ input::placeholder {
 
 .article-list {
   position: relative;
-  list-style: url(/images/list-style.svg);
+  list-style: url("images/list-style.svg");
   width: 303px;
   margin-left: auto;
 }
@@ -1031,5 +1031,32 @@ select {
     width: 340px;
     margin-bottom: 30px;
   }
+}
+
+.signup-section {
+  padding: 60px 0 40px;
+  background: linear-gradient(135deg, #3d4251 0%, #272b35 100%);
+}
+
+.signup-title {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.38;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.signup__box {
+  width: 315px;
+  padding: 50px 0 40px;
+  border: 1px solid #ebeced;
+  border-radius: 6px;
+  background-color: #ffffff;
+  margin: 0 auto 20px;
+}
+
+.signup__box:last-child {
+  margin-bottom: 0 auto 35px;
 }
 /*# sourceMappingURL=main.css.map */

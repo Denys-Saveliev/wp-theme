@@ -1,0 +1,24 @@
+.signup-section {
+   padding: 60px 0 40px;
+   background: $secondary-bg-color;
+}
+
+.signup-title {
+   @include font(300, 32px, 1.38);
+   color: $main-bg-color;
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+.signup__box {
+   width: 315px;
+   padding: 50px 0 40px;
+   border: 1px solid #ebeced;
+   border-radius: 6px;
+   background-color: $main-bg-color;
+   margin: 0 auto 20px;
+}
+
+.signup__box:last-child {
+   margin-bottom: 0 auto 35px;
+}

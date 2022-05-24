@@ -36,11 +36,11 @@
 }
 
 .article__subtitle--bell::before {
-   background-image: url(/images/bell.svg);
+   background-image: url("images/bell.svg");
 }
 
 .article__subtitle--wifi::before {
-   background-image: url(/images/wifi.svg);
+   background-image: url("images/wifi.svg");
 }
 
 .article__subtitle--bell::before,
@@ -59,7 +59,7 @@
 
 .article-list {
    position: relative;
-   list-style: url(/images/list-style.svg);
+   list-style: url("images/list-style.svg");
    width: 303px;
    margin-left: auto;
 

@@ -1,5 +1,14 @@
 .posts-section {
    padding-top: 40px;
+
+   @media screen and (min-width: 1200px) {
+      display: flex;
+   }
+}
+
+.wrapper {
+   display: flex;
+   justify-content: space-between;
 }
 
 .posts-title {
@@ -98,10 +107,37 @@
    border: 1px solid $elements-color;
    transition: all 250ms ease;
 
+   @media screen and (min-width: 1200px) {
+      width: 260px;
+   }
+
    &:hover,
    &:focus {
       cursor: pointer;
       color: $main-bg-color;
       background-color: $elements-color;
    }
+}
+
+.posts-aside {
+   display: none;
+
+   @media screen and (min-width: 1200px) {
+      display: block;
+      position: relative;
+      width: 340px;
+   }
+}
+
+.posts-aside::before {
+   position: absolute;
+   top: 0;
+   left: -50px;
+   content: "";
+   height: 1650px;
+   border: 1px solid #ebeced;
+}
+
+.article-wrapper--ident:nth-child(2) {
+   margin-bottom: 60px;
 }

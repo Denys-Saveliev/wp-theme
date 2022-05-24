@@ -1,0 +1,17 @@
+.section-aside {
+   padding-top: 70px;
+
+   @media screen and (min-width: 1200px) {
+      display: none;
+   }
+}
+
+.search-label--display {
+   display: none;
+
+   @media screen and (min-width: 1200px) {
+      display: block;
+      width: 340px;
+      margin-bottom: 30px;
+   }
+}

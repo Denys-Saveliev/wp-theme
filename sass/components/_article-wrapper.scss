@@ -1,22 +1,18 @@
-.aside {
-   padding-top: 70px;
-}
-
-.search-label--display {
-   display: none;
-
-   @media screen and (min-width: 1200px) {
-      display: block;
-   }
-}
-
 .article-wrapper {
    width: 315px;
    margin: 0 auto;
+
+   @media screen and (min-width: 1200px) {
+      width: 340px;
+   }
 }
 
 .article-wrapper:nth-child(3) {
    margin-bottom: 100px;
+
+   @media screen and (min-width: 1200px) {
+      margin-bottom: 60px;
+   }
 }
 
 .article-wrapper:nth-child(n + 4) {
@@ -27,44 +23,52 @@
    margin-bottom: 70px;
 }
 
-.aside__subtitle {
+.article__subtitle {
    position: relative;
    @include font(300, 24px, 1.42);
    text-align: center;
    margin-bottom: 35px;
 }
 
-.aside__subtitle--indent {
+.article__subtitle--indent {
    text-align: left;
    margin: 0 0 15px 10px;
 }
 
-.aside__subtitle--bell::before {
+.article__subtitle--bell::before {
    background-image: url(/images/bell.svg);
 }
 
-.aside__subtitle--wifi::before {
+.article__subtitle--wifi::before {
    background-image: url(/images/wifi.svg);
 }
 
-.aside__subtitle--bell::before,
-.aside__subtitle--wifi::before {
+.article__subtitle--bell::before,
+.article__subtitle--wifi::before {
    position: absolute;
    content: "";
    top: 0;
    left: 0;
    width: 43px;
    height: 41px;
+
+   @media screen and (min-width: 1200px) {
+      left: 10px;
+   }
 }
 
-.aside-list {
+.article-list {
    position: relative;
    list-style: url(/images/list-style.svg);
    width: 303px;
    margin-left: auto;
+
+   @media screen and (min-width: 1200px) {
+      margin-left: 12px;
+   }
 }
 
-.aside-list::after {
+.article-list::after {
    position: absolute;
    bottom: -30px;
    left: -12px;
@@ -73,11 +77,11 @@
    width: 315px;
 }
 
-.aside-list__item {
+.article-list__item {
    @include font(400, 14px, 1.57);
    color: $secondary-text-color;
 }
 
-.aside-list__item:not(:last-child) {
+.article-list__item:not(:last-child) {
    margin-bottom: 15px;
 }

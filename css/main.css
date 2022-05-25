@@ -1056,7 +1056,7 @@ select {
   margin: 0 auto 20px;
 }
 
-.signup__box:last-child {
-  margin-bottom: 0 auto 35px;
+.signup__box:nth-child(4) {
+  margin: 0 auto 35px;
 }
 /*# sourceMappingURL=main.css.map */

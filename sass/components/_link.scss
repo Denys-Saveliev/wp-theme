@@ -1,0 +1,11 @@
+.link {
+   @include font(400, 14px, 1.57);
+   color: $footer-text-color;
+   transition: color 250ms ease;
+
+   &:hover,
+   &focus {
+      cursor: pointer;
+      color: $elements-color;
+   }
+}

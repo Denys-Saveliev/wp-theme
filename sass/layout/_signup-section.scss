@@ -201,7 +201,7 @@ sub {
 }
 
 @media screen and (max-width: 1199px) {
-   .payment-list__item:nth-child(1) {
+   .payment-item:nth-child(1) {
       display: none;
    }
 }
@@ -219,8 +219,13 @@ sub {
 }
 
 .payment-item__title {
-   @include font(300, 18px, 1.56);
-   color: $main-bg-color;
+   display: none;
+
+   @media screen and (min-width: 1200px) {
+      display: block;
+      @include font(300, 18px, 1.56);
+      color: $main-bg-color;
+   }
 }
 
 .links__list {

@@ -15,6 +15,8 @@
 @import "./components/comment-box";
 @import "./components/search-input";
 @import "./components/article-wrapper";
+@import "./components/title";
+@import "./components/link";
 
 // *Layout
 @import "./layout/header";
@@ -24,3 +26,4 @@
 @import "./layout/posts-section";
 @import "./layout/section-aside";
 @import "./layout/signup-section";
+@import "./layout/footer";

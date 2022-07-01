@@ -89,7 +89,7 @@
 }
 
 .about-text {
-   @include font(500, 14px, 1.57);
+   @include font(400, 14px, 1.57);
    color: $footer-text-color;
 }
 
